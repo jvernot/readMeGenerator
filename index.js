@@ -1,5 +1,10 @@
 // const Choices = require("inqirer/lib/objects/choices");
-var inquirer = require("inquirer");
+const inquirer = require("inquirer");
+const fs = require("fs");
+const util = require("util");
+const generateMarkdown = require("./utils/generateMarkdown.js");
+
+const writeFileAsync = util.promisify(fs.writeFile);
 
 const questions = [
     {
@@ -55,14 +60,24 @@ const questions = [
     },
 ];
 
-inquirer
-    .prompt(questions);
+// function writeToFile(fileName, data) {
+    
+// }
 
-function writeToFile(fileName, data) {
-}
+async function init() {
 
-function init() {
-
+    try {
+      const answers = await inquirer .prompt(questions);
+  
+      const md = generateMarkdown(answers);
+  
+      await writeFileAsync("newREADME.md", md);
+  
+      console.log("Successfully wrote the README file");
+    } catch(err) {
+      console.log(err);
+    }
 }
 
 init();
+
