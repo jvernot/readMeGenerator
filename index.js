@@ -40,7 +40,7 @@ const questions = [
     },
     {
         type: "input",
-        name: "install",
+        name: "installation",
         message: "What command should be run to install dependencies?"
     },
     {
@@ -50,12 +50,12 @@ const questions = [
     },
     {
         type: "input",
-        name: "running",
-        message: "What does the user need to know about using the repo?"
+        name: "usage",
+        message: "What does the user need to do in order to use this repo?"
     },
     {
         type: "input",
-        name: "contributions",
+        name: "contributing",
         message: "What does the user need to know about contributing to the repo?"
     },
 ];
