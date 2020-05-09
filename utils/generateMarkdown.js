@@ -52,7 +52,7 @@ ${data.tests}
 
 ## Questions
 
-If you have any questions about the repo, opne an issue or contact ${data.userName} directly at ${data.email}.
+If you have any questions about the repo, open an issue or contact ${data.userName} directly at ${data.email}.
 `;
 }
 
