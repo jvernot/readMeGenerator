@@ -10,8 +10,6 @@ This application runs in node.js and allows users to answer questions through th
 
 * [Usage](#usage)
 
-* [License](#license)
-
 * [Contributing](#contributing)
 
 * [Tests](#tests)
