@@ -1,4 +1,3 @@
-// const Choices = require("inqirer/lib/objects/choices");
 const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
