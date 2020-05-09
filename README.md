@@ -12,8 +12,6 @@ This application runs in node.js and allows users to answer questions through th
 
 * [Contributing](#contributing)
 
-* [Tests](#tests)
-
 * [Questions](#questions)
 
 
